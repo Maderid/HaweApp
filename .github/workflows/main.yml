@@ -12,7 +12,7 @@ jobs:
 
     defaults:
       run:
-        working-directory: ./HaweApp
+        working-directory: ./HaweApp/frontend
 
     steps:
       - name: Checkout repository
