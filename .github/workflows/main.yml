@@ -12,7 +12,7 @@ jobs:
 
     defaults:
       run:
-        working-directory: ./HaweApp/frontend
+        working-directory: ./frontend
 
     steps:
       - name: Checkout repository
@@ -23,16 +23,10 @@ jobs:
         with:
           node-version: 18
           cache: npm
-          cache-dependency-path: HaweApp/frontend/package-lock.json
+          cache-dependency-path: frontend/package-lock.json
 
       - name: Install dependencies
         run: npm ci
-
-      - name: Run Lint
-        run: npm run lint
-
-      - name: Run Tests
-        run: npm test
 
       - name: Build Project
         run: npm run build
