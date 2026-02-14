@@ -19,7 +19,8 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"]
-    }
+    },
+    "types": ["vite/client"]
   },
   "include": ["src", "postcss.config.js", "tailwind.config.js"],
   "exclude": ["node_modules"]
